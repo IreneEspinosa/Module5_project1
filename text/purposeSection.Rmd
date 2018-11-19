@@ -1,0 +1,3 @@
+## Purpose
+
+The "steak survey" dataset that was used for the ["Where People Go To Check the Weather"](https://fivethirtyeight.com/features/weather-forecast-news-app-habits/) article, is available through the R package [`fivethirtyeight`](https://cran.r-project.org/web/packages/fivethirtyeight/index.html). Using this dataset, this article summarizes the weather source preferences for the _**`r params$region`**_ region of the United States by gender. The data subset used for our summary had `r nrow(sdat)` respondents.

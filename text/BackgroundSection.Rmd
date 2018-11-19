@@ -1,0 +1,3 @@
+## Background
+
+In April 2015, Walt Hichey at [538.com](http:77fivethirtyeight.com/) published an article entitled ["Where People Go To Check the Weather"](https://fivethirtyeight.com/features/weather-forecast-news-app-habits/). This article utilized survey data collected from 928 people which asked questions on if they typically check the weather on a daily basis and if so, what source they used to check the weather. Additional follow-up questions were asked about which specific websites or apps they used an ifn they had a smartwatch if they would check the weather on that smartwatch.

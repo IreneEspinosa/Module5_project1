@@ -1,0 +1,66 @@
+---
+title: "Weather Information Preference"
+subtitle: "Summary Report For the _**`r params$region`**_ Region"
+author: "Author: Irene Espinosa-Martos, PhD."
+date: "`r format(Sys.Date(), '%d de %B, %Y')`"
+output: 
+  ioslides_presentation:
+    logo: images/sunstar.png
+params:
+  region:
+    label: "Region:"
+    value: Mountain
+    input: select
+    choices: ["East North Central" ,
+     "South Atlantic" , "New England" ,
+     "Middle Atlantic" , "West South Central" ,
+     "West North Central" , "Pacific" ,           
+     "Mountain" , "East South Central" ]
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+knitr::read_chunk("code/setup.R")
+```
+
+```{r setup, echo=FALSE, message=FALSE, warning=FALSE}
+```
+
+```{r loadData}
+```
+\pagebreak
+
+
+```{r child="text/BackgroundSection.Rmd"}
+```
+
+```{r child="text/purposeSection.Rmd"}
+```
+
+## Demographics of Survey Respondents in a Merged Table
+
+This section is provided as an example of how to merge the three demographic summary tables for the `r nrow(sdat)` survey respondents above into a single merged table.
+
+```{r makeTable, code=readLines("code/makeTable.R")}
+```
+
+## Weather Source Preference by Gender
+
+Finally, here is a breakdown of the `r nrow(sdat)` survey respondents for the _**`r params$region`**_ region of the Us on how they prefer their steak to be prepared by gender.
+
+```{r}
+knitr::read_chunk("code/makeChart.R")
+```
+
+```{r makeCharts}
+```
+
+
+
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+
+
